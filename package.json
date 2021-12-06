@@ -1,7 +1,10 @@
 {
   "name": "unit2px",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "convert vw/vh to px ",
+  "repository": {
+    "url": "https://github.com/up2gx/unit2px"
+  },
   "main": "lib/index.js",
   "bin": {
     "unit2px": "bin/index.js"

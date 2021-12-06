@@ -7,10 +7,10 @@ const program = new commander.Command();
 program
   .version(require('../package.json').version)
   .name('unit2px')
-  .option('-d, --dir <dir...>', '需要执行命令的文件夹路径')
-  .option('-t, --type <type...>', '需要执行命令的文件名后缀，默认 .html, .css')
-  .option('-w, --width <width>', '要转换的视口宽度')
-  .option('-h, --height <height>', '要转换的视口高度')
+  .option('-d, --dir <dir...>', 'directory to be convert (default: [__dirname])')
+  .option('-t, --type <type...>', `file types to be convert (default: ['.html', '.css'])`)
+  .option('-w, --width <width>', 'client width (default: 375)')
+  .option('-h, --height <height>', 'client height (default: 812)')
   .action((option) => {
     require('../lib/index.js')(option)
   })
