@@ -11,7 +11,7 @@ program
   .option('-t, --type <type...>', `file types to be convert (default: ['.html', '.css'])`)
   .option('-w, --width <width>', 'client width (default: 375)')
   .option('-h, --height <height>', 'client height (default: 812)')
-  .action((option) => {
+  .action((option = {}) => {
     require('../lib/index.js')(option)
   })
 
