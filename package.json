@@ -1,0 +1,22 @@
+{
+  "name": "unit2px",
+  "version": "0.0.1",
+  "description": "convert vw/vh to px ",
+  "main": "lib/index.js",
+  "bin": {
+    "unit2px": "bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "vw2px",
+    "vh2px",
+    "px"
+  ],
+  "author": "up2gx",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.3.0"
+  }
+}
